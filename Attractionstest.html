@@ -3,10 +3,10 @@
   <head>
   	<meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="Randy Olson uses machine learning to find the optimal road trip across the U.S.">
+    <meta name="description" content="Erin Petenko PLACEHOLDER?????????????">
     <meta name="author" content="Randal S. Olson">
     
-    <title>The optimal road trip across the U.S. according to machine learning</title>
+    <title>The optimal road trip across N.J. according to machine learning</title>
     <style>
       html, body, #map-canvas {
         height: 100%;
@@ -34,9 +34,9 @@
 		var map;
 
 		function initialize() {
-		  var center = new google.maps.LatLng(39, -96);
+		  var center = new google.maps.LatLng(40.441139, -74.547617);
 		  var mapOptions = {
-			zoom: 5,
+			zoom: 8,
 			center: center
 		  };
 		  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -90,7 +90,7 @@
 			}
 		}
 
-		optimal_route = ['1 Audrey Zapp Drive, Jersey City, NJ 07305', 'Hudson River Waterfront Walkway, Jersey City, NJ 07302', '1 Hudson Pl, Hoboken, NJ 07030', '1 Metlife Stadium Dr, East Rutherford, NJ 07073', '211 Main St, West Orange, NJ 07052', '560 Northfield Ave, West Orange, NJ 07052', '1112 Dukes Pkwy W, Hillsborough Township, NJ 08844', 'McCormick Hall, Princeton, NJ 08544', '40.238645, -74.721615', '100 Clinton St, Camden, NJ 081033501 Boardwalk, Wildwood, NJ 08260', '521 NJ-47, Cape May, NJ 08204', '500 Forrestal Rd, Rio Grande, NJ 08242', '168 Stevens St, West Cape May, NJ 08204', '215 Light House Ave, Cape May Point, NJ 08212', 'Beach Ave, Cape May, NJ 08204', '39.102851, -74.814134', '600 Boardwalk, Ocean City, NJ 08226', '6415 E Black Horse Pike, Egg Harbor Township, NJ 08234', '1 Borgata Way, Atlantic City, NJ 08401', '320 7th St, Beach Haven, NJ 08008', '208 Broadway, Barnegat Light, NJ 08006', '1 Ocean Ave, Ocean Grove, NJ 07756', '1000 Ocean Ave, Asbury Park, NJ 07712', '651 Kapkowski Rd, Elizabeth, NJ 07201']
+		optimal_route = ['Empty Sky Memorial, 1 Audrey Zapp Drive, Jersey City, NJ 07305', 'Hoboken waterfront, 1 Hudson Pl, Hoboken, NJ 07030', 'Metlife Stadium, 1 Metlife Stadium Dr, East Rutherford, NJ 07073', 'Thomas Edison home, 211 Main St, West Orange, NJ 07052', '560 Northfield Ave, West Orange, NJ 07052', '1112 Dukes Pkwy W, Hillsborough Township, NJ 08844', 'McCormick Hall, Princeton, NJ 08544', '40.238645, -74.721615', '100 Clinton St, Camden, NJ 081033501 Boardwalk, Wildwood, NJ 08260', '521 NJ-47, Cape May, NJ 08204', '500 Forrestal Rd, Rio Grande, NJ 08242', '168 Stevens St, West Cape May, NJ 08204', '215 Light House Ave, Cape May Point, NJ 08212', 'Beach Ave, Cape May, NJ 08204', '39.102851, -74.814134', '600 Boardwalk, Ocean City, NJ 08226', '6415 E Black Horse Pike, Egg Harbor Township, NJ 08234', '1 Borgata Way, Atlantic City, NJ 08401', '320 7th St, Beach Haven, NJ 08008', '208 Broadway, Barnegat Light, NJ 08006', '1 Ocean Ave, Ocean Grove, NJ 07756', '1000 Ocean Ave, Asbury Park, NJ 07712', '651 Kapkowski Rd, Elizabeth, NJ 07201']
 		
 		createRoutes(optimal_route);
 
